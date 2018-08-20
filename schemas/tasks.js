@@ -56,7 +56,6 @@ NEWSCHEMA('Task', function(schema) {
 					MAIN.send(doc.userid, data);
 
 				db.modify({ completed: completed, updated: NOW }).where('id', id).callback($.done());
-
 			} else
 				$.success(true);
 		});
