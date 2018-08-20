@@ -9,6 +9,13 @@
 
 This application is example only for understanding of concept of OpenPlatform.
 
+![OpenPlatform To-Do app](https://cdn.totaljs.com/images/openplatform-todo.jpg)
+
+## Features
+
+- creating personal tasks
+- creating shared tasks
+
 ## Installation
 
 - Download source-code
