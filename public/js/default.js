@@ -1,3 +1,7 @@
+UPTODATE('1 hour', function() {
+	return !document.hasFocus();
+});
+
 function resizelayout() {
 	var h = $(window).height();
 	$('.scroller').each(function() {

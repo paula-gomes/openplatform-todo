@@ -244,10 +244,6 @@
 					EXEC('app/prepare');
 					REDIRECT(NAV.url);
 					break;
-				case 'rem':
-					tasks.db = tasks.db.remove('id', msg.id);
-					REDIRECT(NAV.url);
-					break;
 				default:
 					var task = tasks.db.findItem('id', msg.id);
 					if (task) {
