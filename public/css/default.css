@@ -1,0 +1,60 @@
+/*auto*/
+
+$color    : #4285F4;
+
+body { padding:0; margin:0; font:normal 14px Arial; color: #656D78; background-color: white; line-height: 20px; }
+
+.body { margin-left: 220px; }
+.padding { padding: 20px 30px; }
+.hidden { display: none; }
+
+.mainmenu { float: left; width: 220px; background-color: #F0F0F0; padding: 22px 0 10px; transition: all 0.3s; }
+.mainmenu nav a { display: block; width: 90%; border: 0; text-align: left; padding: 6px 10px; background-color: transparent; color: black; outline: 0; text-decoration: none; margin: 0 auto 3px; }
+.mainmenu nav a:hover { text-decoration: none; }
+.mainmenu nav .fa { width: 20px; text-align: center; margin-right: 5px; }
+.mainmenu .selected { background-color: #E0E0E0 !important; border-radius: 3px; }
+.mainmenu span { float: right; font-size: 11px; color: gray; }
+.mainmenu-visible { left: 0 !important; }
+
+.newtask { height: 40px; padding: 0; border: 1px solid #E0E0E0; border-radius: 3px; }
+.newtask-input { margin-right: 100px; }
+.newtask-input input { background-color: transparent; border: 0; font-size: 16px; width: 100%; outline: 0; padding: 10px 10px 0; }
+.newtask-button { float: right; width: 100px; font-size: 14px; font-weight: bold; }
+.newtask-button .fa { margin-right: 5px; }
+.newtask-button button { width: 100%; background-color: $color; outline: 0; height: 38px; border: 0; border-radius: 0 3px 3px 0; color: white; }
+.newtask-button button:hover { opacity: 0.8; }
+.newtask-button button:disabled { color: gray; background-color: #F0F0F0; opacity: 1 !important; }
+
+.task { cursor: pointer; margin-bottom: 8px; }
+.task > span { float: left; width: 18px; height: 18px; background-color: white; border-radius: 3px; border: 1px solid #D0D0D0; margin: 2px 0 0 0; font-size: 10px; text-align: center; line-height: 18px; }
+.task > span .fa { visibility: hidden; }
+.task > figure { margin-left: 28px; color: black; display: block; height: 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.task-checked > figure { color: #909090; }
+.task-checked > span { color: white; background-color: $color; border-color: $color; }
+.task-checked > span .fa { visibility: visible; }
+.task > figure > span { font-size: 11px; border-radius: 2px; max-width: 100px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: 2px 5px; float: left; line-height: 14px; margin: 2px 5px 0 0; }
+.task > figure > div { position: relative; display: inline-block; margin: 1px 0 0; }
+.task-to { background-color: #4285F4; color: white; }
+.task-from { background-color: red; color: white; }
+
+.help { font-size: 11px; color: #A0A0A0; margin-top: 8px; line-height: 13px; }
+.help .fa, .help .far, .help .fal { margin-right: 5px; }
+.help code { font: normal normal 11px Arial; background-color: #F0F0F0; padding: 1px 3px; border-radius: 2px; border: 1px solid #E0E0E0; }
+
+.nmt { margin-top: 0 !important; }
+.b { font-weight: bold; }
+.empty { font-size: 12px; color: #505050; margin: 50px auto 20px; padding: 20px 0; text-align: center; max-width: 250px; border-top: 1px solid #E0E0E0; border-bottom: 1px solid #E0E0E0; }
+.empty span { font-size: 16px; font-weight: bold; color: #68A754; text-transform: uppercase; }
+.m { margin-bottom: 20px; }
+
+.ibutton.remove { color: red; border-color: red; }
+.ibutton { font-size: 11px; background-color: white; border-radius: 3px; border: 1px solid #E0E0E0; outline: 0; padding: 2px 10px; }
+.ibutton:hover { border-color: #D0D0D0; }
+.ibutton .fa { margin-right: 5px; }
+
+@media(max-width: 500px) {
+	.mainmenu { position: absolute; float: none; left: -800px; width: 100%; z-index: 10; }
+	.mainmenu nav a { font-size: 16px; padding: 8px 15px; }
+	.body { margin-left: 0; }
+	.padding { padding: 20px 20px; }
+}

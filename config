@@ -1,0 +1,5 @@
+name                  : To-Do
+author                : Peter Širka
+version               : 1.0.0
+
+table.tasks           : id:string | userid:string | ownerid:string | body:string | completed:boolean | deadline:date | updated:date | created:date

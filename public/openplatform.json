@@ -1,0 +1,14 @@
+{
+	"name": "To-Do",
+	"description": "A simple To-Do list app",
+	"version": "1.0.0",
+	"icon": "check-circle",
+	"url": "http://127.0.0.1:8001",
+	"author": "Peter Širka",
+	"email": "petersirka@gmail.com",
+	"roles": [],
+	"width": 800,
+	"height": 600,
+	"resize": true,
+	"origin": []
+}
