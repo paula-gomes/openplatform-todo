@@ -4,9 +4,11 @@ $color    : #4285F4;
 
 body { padding:0; margin:0; font:normal 14px Arial; color: #656D78; background-color: white; line-height: 20px; }
 
-.body { margin-left: 220px; }
+.body { margin-left: 220px; position: relative; }
 .padding { padding: 20px 30px; }
 .hidden { display: none; }
+.scroller { overflow-y: auto; overflow-x: hidden; overflow-scrolling: touch; }
+.scroller-padding { padding: 20px 30px 20px 20px; }
 
 .mainmenu { float: left; width: 220px; background-color: #F0F0F0; padding: 22px 0 10px; transition: all 0.3s; }
 .mainmenu nav a { display: block; width: 90%; border: 0; text-align: left; padding: 6px 10px; background-color: transparent; color: black; outline: 0; text-decoration: none; margin: 0 auto 3px; }
@@ -16,6 +18,7 @@ body { padding:0; margin:0; font:normal 14px Arial; color: #656D78; background-c
 .mainmenu span { float: right; font-size: 11px; color: gray; }
 .mainmenu-visible { left: 0 !important; }
 
+.newtask-container { background-color: white; z-index: 2; padding: 10px 20px 0; border-bottom: 1px solid #E0E0E0; }
 .newtask { height: 40px; padding: 0; border: 1px solid #E0E0E0; border-radius: 3px; }
 .newtask-input { margin-right: 100px; }
 .newtask-input input { background-color: transparent; border: 0; font-size: 16px; width: 100%; outline: 0; padding: 10px 10px 0; }
