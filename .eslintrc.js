@@ -1,6 +1,6 @@
 module.exports = {
     "globals": {
-        "MAIN": true,
+        "MAIN": true
         "OPENPLATFORM": true
     }
 };
