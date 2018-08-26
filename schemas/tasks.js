@@ -17,8 +17,7 @@ NEWSCHEMA('Task', function(schema) {
 		data.completed = false;
 
 		if (data.userid && data.userid !== data.ownerid) {
-
-			// send a notification
+			// Send a notification
 			var user = MAIN.users[$.user.openplatformid].users.findItem('id', data.userid);
 			user && MAIN.notify(user, $.user.name + ': ' + data.body, null, data.id);
 			if (MAIN.sessions[data.userid]) {
@@ -50,10 +49,8 @@ NEWSCHEMA('Task', function(schema) {
 				data.id = doc.id;
 				data.completed = completed;
 
-				if (doc.userid === $.user.id)
-					MAIN.send(doc.ownerid, data);
-				else if (doc.userid && doc.ownerid === $.user.id)
-					MAIN.send(doc.userid, data);
+				MAIN.send(doc.ownerid, data);
+				doc.userid && MAIN.send(doc.userid, data);
 
 				db.modify({ completed: completed, updated: NOW }).where('id', id).callback($.done());
 			} else

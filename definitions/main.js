@@ -3,10 +3,7 @@ MAIN.users = {};
 MAIN.sessions = {};
 
 MAIN.send = function(userid, msg) {
-	if (MAIN.ws) {
-		var client = MAIN.ws.find(client => client.user.id === userid);
-		client && client.send(msg);
-	}
+	MAIN.ws && MAIN.ws.send(msg, (id, client) => client.user.id === userid);
 };
 
 MAIN.notify = function(user, msg, type, data) {

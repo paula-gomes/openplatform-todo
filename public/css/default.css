@@ -14,7 +14,7 @@ body { padding:0; margin:0; font:normal 14px Arial; color: #656D78; background-c
 .mainmenu nav a { display: block; width: 90%; border: 0; text-align: left; padding: 6px 10px; background-color: transparent; color: black; outline: 0; text-decoration: none; margin: 0 auto 3px; }
 .mainmenu nav a:hover { text-decoration: none; }
 .mainmenu nav .fa { width: 20px; text-align: center; margin-right: 5px; }
-.mainmenu .selected { background-color: #E0E0E0 !important; border-radius: 3px; }
+.mainmenu .selected { background-color: rgba(0,0,0,0.08) !important; border-radius: 3px; }
 .mainmenu span { float: right; font-size: 11px; color: gray; }
 .mainmenu-visible { left: 0 !important; }
 
