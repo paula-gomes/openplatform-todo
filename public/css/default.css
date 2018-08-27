@@ -11,8 +11,8 @@ body { padding:0; margin:0; font:normal 14px Arial; color: #656D78; background-c
 .scroller-padding { padding: 20px 30px 20px 20px; }
 
 .mainmenu { float: left; width: 220px; background-color: #F0F0F0; padding: 22px 0 10px; transition: all 0.3s; }
-.mainmenu nav a { display: block; width: 90%; border: 0; text-align: left; padding: 6px 10px; background-color: transparent; color: black; outline: 0; text-decoration: none; margin: 0 auto 3px; }
-.mainmenu nav a:hover { text-decoration: none; }
+.mainmenu nav li { display: block; width: 90%; border: 0; text-align: left; padding: 6px 10px; background-color: transparent; color: black; outline: 0; text-decoration: none; margin: 0 auto 3px; cursor: pointer; }
+.mainmenu nav li:hover { text-decoration: none; }
 .mainmenu nav .fa { width: 20px; text-align: center; margin-right: 5px; }
 .mainmenu .selected { background-color: rgba(0,0,0,0.08) !important; border-radius: 3px; }
 .mainmenu span { float: right; font-size: 11px; color: gray; }
@@ -54,6 +54,10 @@ body { padding:0; margin:0; font:normal 14px Arial; color: #656D78; background-c
 .ibutton { font-size: 11px; background-color: white; border-radius: 3px; border: 1px solid #E0E0E0; outline: 0; padding: 2px 10px; }
 .ibutton:hover { border-color: #D0D0D0; }
 .ibutton .fa { margin-right: 5px; }
+
+.link { color: #307BBE; cursor: pointer; }
+.link:hover { text-decoration: underline; }
+.link .fa { margin-right: 5px; }
 
 @media(max-width: 500px) {
 	.mainmenu { position: absolute; float: none; left: -800px; width: 100%; z-index: 10; }

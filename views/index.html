@@ -18,12 +18,12 @@
 
 	<div data-jc="LAZY suggestion__null__placeholder:@(Search ...)"></div>
 	<div class="mainmenu scroller">
-		<nav data-jc="selected__common.page">
-			<a href="/all/" data-if="all" class="jR b"><span data-bind="tasks.stats.all__html:value__show:value"></span><i class="fa fa-inbox"></i> @(All uncompleted)</a>
-			<a href="/personal/" data-if="personal" class="jR"><span data-bind="tasks.stats.personal__html:value__show:value"></span><i class="fa fa-user"></i> @(Personal)</a>
-			<a href="/received/" data-if="received" class="jR"><span data-bind="tasks.stats.received__html:value__show:value"></span><i class="fa fa-clock-o"></i> @(Received)</a>
-			<a href="/sent/" data-if="sent" class="jR"><span data-bind="tasks.stats.sent__html:value__show:value"></span><i class="fa fa-users"></i> @(Sent)</a>
-			<a href="/archive/" data-if="archive" class="jR"><span data-bind="tasks.stats.archive__html:value__show:value"></span><i class="fa fa-archive"></i> @(Archive)</a>
+		<nav data-jc="selected__common.page__selector:li">
+			<li data-jr="/all/" data-if="all" class="jR b"><span data-bind="tasks.stats.all__html:value__show:value"></span><i class="fa fa-inbox"></i> @(All uncompleted)</li>
+			<li data-jr="/personal/" data-if="personal" class="jR"><span data-bind="tasks.stats.personal__html:value__show:value"></span><i class="fa fa-user"></i> @(Personal)</li>
+			<li data-jr="/received/" data-if="received" class="jR"><span data-bind="tasks.stats.received__html:value__show:value"></span><i class="fa fa-clock-o"></i> @(Received)</li>
+			<li data-jr="/sent/" data-if="sent" class="jR"><span data-bind="tasks.stats.sent__html:value__show:value"></span><i class="fa fa-users"></i> @(Sent)</li>
+			<li data-jr="/archive/" data-if="archive" class="jR"><span data-bind="tasks.stats.archive__html:value__show:value"></span><i class="fa fa-archive"></i> @(Archive)</li>
 		</nav>
 	</div>
 
@@ -35,7 +35,7 @@
 				<div class="newtask-input"><input type="text" placeholder="@(Type a task)" maxlength="1000" data-jc-bind="" /></div>
 			</div>
 			<div class="help">
-				<a href="javascript:void(0)" class="exec" data-exec="app/adduser" data-bind="newtask.userid__html span:app/getUserName"><i class="fa fa-user"></i><span>...</span></a>
+				<span class="exec link" data-exec="app/adduser" data-bind="newtask.userid__html span:app/getUserName"><i class="fa fa-user"></i><span>...</span></span>
 			</div>
 		</div>
 
