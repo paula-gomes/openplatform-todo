@@ -206,7 +206,6 @@
 				if (model.userid === user.id)
 					model.userid = undefined;
 
-				OPENPLATFORM.loading(true);
 				AJAX('POST /api/tasks/', model, function(response) {
 					model.id = response.value;
 					model.created = new Date();
@@ -214,7 +213,6 @@
 					model.completed = false;
 					tasks.db.unshift(model);
 					exports.prepare();
-					OPENPLATFORM.loading(false, 500);
 					REDIRECT(NAV.url);
 				});
 
