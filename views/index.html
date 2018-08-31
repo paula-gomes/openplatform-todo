@@ -82,6 +82,8 @@
 		var tasks = {};
 
 		tasks.stats = {};
+
+		common.users = EMPTYARRAY;
 		common.page = '';
 
 		ON('request', function(options) {
@@ -131,7 +133,7 @@
 		});
 
 		MIDDLEWARE('users', function(next) {
-			if (common.users)
+			if (common.users !== EMPTYARRAY)
 				return next();
 			AJAX('GET /api/users/', function(response) {
 				common.users = response;
