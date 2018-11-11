@@ -7,8 +7,14 @@
 	"author": "Peter Širka",
 	"email": "petersirka@gmail.com",
 	"roles": [],
-	"width": 800,
-	"height": 600,
+	"width": 700,
+	"height": 500,
+	"notifications": true,
+	"serverside": true,
+	"allowreadmeta": true,
+	"allowreadprofile": 1,
+	"allowreadusers": 2,
+	"allowreadapps": 0,
 	"resize": true,
-	"origin": []
+	"origin": ["138.201.86.196"]
 }
