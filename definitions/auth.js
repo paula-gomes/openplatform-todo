@@ -63,7 +63,7 @@ function synchronize(user, callback) {
 		builder.url(user.users);
 		builder.exec(function(err, users) {
 			!meta && (meta = MAIN.users[user.openplatformid] = {});
-			meta.users = users.map(mapping);
+			meta.users = users.items.map(mapping);
 			meta.updated = NOW;
 			callback && callback();
 		});
